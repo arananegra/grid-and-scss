@@ -1,0 +1,14 @@
+{
+  "name": "gridscss",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel ./index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^1.12.3",
+    "node-sass": "^4.11.0"
+  }
+}
