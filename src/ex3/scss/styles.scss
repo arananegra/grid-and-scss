@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (min-width: 48rem) {
+    .container {
+        > .header {
+            background-color: lightpink;
+            display: flex;
+            justify-content: space-between;
+            > div {
+                padding-left: 0.3rem;
+                padding-right: 0.3rem;
+            }
+        }
+        > .navbar {
+            display: flex;
+            justify-content: space-between;
+            > div {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                border: 1px solid grey;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 48rem) {
+}

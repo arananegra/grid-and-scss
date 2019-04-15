@@ -1,17 +1,18 @@
 .container {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
-.container > div[class$="-pallete"] {
-  display: flex;
-  justify-content: center;
-  margin-top: 2vh;
-  color: white;
-  > div {
-      padding: 6rem 1.5rem 6rem 1.5rem;
-      margin-left: 0.2%;
-      margin-right: 0.2%;
-      margin-bottom: 1%;
-  }
+.container>div[class$="-pallete"] {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    color: white;
+
+    >div {
+        padding: 6rem 1.5rem 6rem 1.5rem;
+        margin-left: 0.2%;
+        margin-right: 0.2%;
+        margin-bottom: 1%;
+    }
 }

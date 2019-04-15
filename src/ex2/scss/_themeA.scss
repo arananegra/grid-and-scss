@@ -17,9 +17,9 @@ $secondary-color: darken($primary-color, 25%);
 
 .common-style-box-shadow {
     @extend .common-style-box;
-    -webkit-box-shadow: -22px 25px 23px -9px rgba(0,0,0,0.75);
-    -moz-box-shadow: -22px 25px 23px -9px rgba(0,0,0,0.75);
-    box-shadow: -22px 25px 23px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -22px 25px 23px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -22px 25px 23px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: -22px 25px 23px -9px rgba(0, 0, 0, 0.75);
 }
 
 .base {
