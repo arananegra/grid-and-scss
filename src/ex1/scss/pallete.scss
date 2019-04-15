@@ -1,1 +1,38 @@
-@import "layout";
+@import "layout_and_commons";
+
+@mixin apply-variant-brightness($base-color, $brightness-property-name: null){
+    @if $brightness-property-name == null {
+        .base {
+            background-color: $base-color
+        }
+    } @else {
+        @for $i from 1 through 4 {
+            .#{$brightness-property-name}-#{$i} {
+                @if $brightness-property-name == "darken" {
+                    background-color: darken( $base-color, percentage($i / 10));
+                } @else {
+                    background-color: lighten( $base-color, percentage($i / 10))
+                }
+            }
+        }
+    }
+}
+
+.container  {
+    > div[class="red-pallete"] {
+        @include apply-variant-brightness(red, "darken");
+        @include apply-variant-brightness(red);
+        @include apply-variant-brightness(red, "lighten");
+    }
+    > div[class="green-pallete"] {
+        @include apply-variant-brightness(rgb(14, 190, 14), "darken");
+        @include apply-variant-brightness(rgb(14, 190, 14));
+        @include apply-variant-brightness(rgb(14, 190, 14), "lighten");
+    }
+    > div[class="blue-pallete"] {
+        @include apply-variant-brightness(blue, "darken");
+        @include apply-variant-brightness(blue);
+        @include apply-variant-brightness(blue, "lighten");
+    }
+}
+
