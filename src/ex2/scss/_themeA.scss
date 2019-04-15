@@ -1,0 +1,52 @@
+$primary-color: red;
+$secondary-color: darken($primary-color, 25%);
+
+* {
+    font-size: 23px;
+}
+
+.common-style-box {
+    width: 7rem;
+    height: 4rem;
+    padding-left: 3%;
+    padding-top: 2%;
+    border-radius: 3px;
+    border: 1px solid grey;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.common-style-box-shadow {
+    @extend .common-style-box;
+    -webkit-box-shadow: -22px 25px 23px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -22px 25px 23px -9px rgba(0,0,0,0.75);
+    box-shadow: -22px 25px 23px -9px rgba(0,0,0,0.75);
+}
+
+.base {
+    @extend .common-style-box;
+    background-color: $primary-color;
+}
+
+.important {
+    @extend .common-style-box;
+    background-color: $secondary-color;
+}
+
+.warning {
+    @extend .common-style-box;
+    background-color: lightpink;
+}
+
+.primary-font {
+    margin: 0.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.secondary-font {
+    margin: 0.5%;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.shadow-box {
+    @extend .common-style-box-shadow;
+}
