@@ -21,4 +21,4 @@ npm run ex2
 ```
 You should now see the output in a new web tab.
 
-If you want to change the theme, you just need to comment/ uncomment the imports from [styles.scss](./src/ex2/scss/styles.scss) (themeB or themeA).
+If you want to change the theme, you just need to comment/ uncomment the imports from [styles.scss](./src/ex2/scss/styles.scss) (themeB or themeA) (themeA applied by default).
