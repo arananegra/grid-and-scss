@@ -1,0 +1,35 @@
+$mainColorBlack: rgba(0, 0, 0, 0.8);
+
+@mixin assignColor($id: "null") {
+    @if $id=='header' {
+        background-color: lightpink;
+    }
+
+    @else if $id=='content-a' {
+        background-color: yellow;
+    }
+
+    @else if $id=='content-b' {
+        background-color: rgba(2, 107, 245, 0.808);
+    }
+
+    @else if $id=='null' {
+        background-color: cadetblue;
+    }
+}
+
+.common-div {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-inner-rows-full-width {
+    div[id$="-div-inner"] {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

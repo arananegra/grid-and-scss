@@ -5,7 +5,8 @@
   "scripts": {
     "ex1": "parcel ./src/ex1/ex1.html --open",
     "ex2": "parcel ./src/ex2/ex2.html --open",
-    "ex3": "parcel ./src/ex3/ex3.html --open"
+    "ex3": "parcel ./src/ex3/ex3.html --open",
+    "ex4": "parcel ./src/ex4/ex4.html --open"
   },
   "dependencies": {},
   "devDependencies": {

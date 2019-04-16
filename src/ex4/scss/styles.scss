@@ -1,0 +1,101 @@
+@import "layout_and_commons";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+//extra-large
+@media screen and (min-width: 81.25rem) {
+    .container {
+        margin-left: 13rem;
+        margin-right: 13rem;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "header content-a"
+            "header content-a"
+            "header content-b"
+            "header content-b";
+
+        .header>#header-div-inner {
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+//large
+@media screen and (min-width: 56.25rem) and (max-width: 81.19rem) {
+    .container {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "header content-a"
+            "header content-a"
+            "header content-b"
+            "header content-b";
+
+        .header>#header-div-inner {
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+//medium
+@media screen and (min-width: 31.25rem) and (max-width: 56.19rem) {
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 8rem 1fr 1fr;
+        grid-template-areas:
+            "header"
+            "content-a"
+            "content-b"
+    }
+}
+
+//small
+@media screen and (max-width: 31.19rem) {
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2rem 1fr 1fr;
+        grid-template-areas:
+            "header"
+            "content-a"
+            "content-b"
+    }
+}
+
+
+
+.header {
+    @extend .common-div;
+    @include assignColor("header");
+    @extend .flex-inner-rows-full-width;
+    grid-area: header;
+}
+
+.content-a {
+    @extend .common-div;
+    @include assignColor("content-a");
+    @extend .flex-inner-rows-full-width;
+    grid-area: content-a;
+}
+
+.content-b {
+    @extend .common-div;
+    @include assignColor("content-b");
+    @extend .flex-inner-rows-full-width;
+    grid-area: content-b;
+}
